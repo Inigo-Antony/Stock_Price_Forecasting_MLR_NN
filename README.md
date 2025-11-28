@@ -37,12 +37,6 @@ MAPE comparison for both models
 
 Price prediction plotting
 
-🗂️ Project Structure
-├── stock_prediction.ipynb  # Notebook version (optional)
-├── main.py                 # Python script 
-├── README.md               # Project documentation
-└── requirements.txt        # Python dependencies
-
 🛠️ Tech Stack
 Component	Library / Tool
 Data Source	yfinance
