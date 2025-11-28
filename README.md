@@ -1,13 +1,13 @@
 📈 Stock Price Prediction using Neural Networks & Linear Regression
 
-Predicting AAPL stock prices using lag features, interpolation-driven weekly lags, and a comparison of Neural Network vs Multiple Linear Regression models.
+Predicting stock prices using lag features, interpolation-driven weekly lags, and a comparison of Neural Network vs Multiple Linear Regression models.
 
 🔍 Project Overview
 
 This project explores short-term stock price prediction using historical price data.
 The workflow includes:
 
-Pulling 10 years of AAPL data from Yahoo Finance
+Pulling 10 years of stock data from Yahoo Finance
 
 Engineering lag features (1-day lag, 1-week lag with holiday gap estimation)
 
@@ -38,9 +38,8 @@ MAPE comparison for both models
 Price prediction plotting
 
 🗂️ Project Structure
-├── AAPL.csv                # Auto-saved dataset from Yahoo Finance
 ├── stock_prediction.ipynb  # Notebook version (optional)
-├── main.py                 # Python script (if applicable)
+├── main.py                 # Python script 
 ├── README.md               # Project documentation
 └── requirements.txt        # Python dependencies
 
@@ -52,10 +51,10 @@ Visualization	matplotlib, seaborn
 Models	Keras (Sequential), sklearn.LinearRegression
 📥 Data Download
 
-The script automatically downloads AAPL data:
+The script automatically downloads Stock data (SYM=AAPL, etc):
 
-data = yf.download("AAPL", start="2014-01-01", end="2024-01-01", auto_adjust=False)
-data.to_csv("AAPL.csv")
+data = yf.download("SYM", start="2014-01-01", end="2024-01-01", auto_adjust=False)
+data.to_csv("SYM.csv")
 
 🧩 Feature Engineering
 1. Lag-1 Feature
@@ -130,8 +129,8 @@ A clear visual comparison of forecast performance.
 
 ▶️ How to Run
 1. Clone the Repository
-git clone https://github.com/your-username/stock-price-prediction.git
-cd stock-price-prediction
+git clone https://github.com/Inigo-Antony/Stock_Price_Forecasting_MLR_NN.git
+cd Stock_Price_Forecasting_MLR_NN
 
 2. Install Dependencies
 pip install -r requirements.txt
